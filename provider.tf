@@ -4,7 +4,7 @@
 provider "aws" {
   region = "eu-central-1"
   assume_role {
-    role_arn = "arn:aws:iam::761428468132:role/tf-deployment-role"
+    role_arn = "arn:aws:iam::417447013857:role/tf-deployment-role"
     session_name = "terraform-session"
   }
   default_tags {
