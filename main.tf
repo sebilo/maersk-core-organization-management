@@ -51,6 +51,17 @@ module "permissionsets" {
       tags = {
 
       }
+    },
+    {
+      name               = "sso-gbl-lz-identitycontributor"
+      description        = "Provides identity contributor access to Maersk Landing Zone core accounts"
+      relay_state        = ""
+      session_duration   = "PT1H"
+      policy_attachments = ["arn:aws:iam::aws:policy/AWSSSOMasterAccountAdministrator"]
+      inline_policy      = ""
+      tags = {
+
+      }
     }
   ]
 }
